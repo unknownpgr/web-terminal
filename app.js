@@ -17,7 +17,10 @@ const server = http.createServer((req, res) => {
     />
   </head>
   <body>
-    <div id="terminal"></div>
+    <div style="max-width: 800px; margin: 0 auto; padding: 2rem;">
+      <h1>Most Simple Web Terminal Example</h1>
+      <p><strong>Note: IT IS NOT SECURE. DO NOT OPEN TO PUBLIC.</strong></p>
+      <div id="terminal"></div>
     <script>
       const websocket = new WebSocket("/");
       const term = new Terminal();
